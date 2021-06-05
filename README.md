@@ -13,3 +13,11 @@ This tutorial is designed to show some basics of terraform, which is infrastruct
     - [Provider Block](01-getting-started#provider-block)
     - [Adding Linode Users](01-getting-started#adding-linode-users)
     - [Setting up an instance](01-getting-started#setting-up-an-instance)
+
+2. [Terraform State And Files](02-terraform-state-and-files)
+
+    This portion is to show you different ways to set up your terraform directories, find terraform state information, how to use variables, and to comment within files.
+
+    - [Terraform State and Files](02-terraform-state-and-files#0terraform-state-and-files)
+    - [Terraform State](02-terraform-state-and-files#terraform-state)
+    - [Terraform File Structures And Variables](02-terraform-state-and-files#terraform-file-structures-and-variables)

@@ -2,7 +2,7 @@
 
 We'll be going over the basics of getting started of Terraform. You'll need to make sure to have a Linode Account if you follow along. You can go [here](https://https://linode.gvw92c.net/b1tsized) to check them out.
 
-In the accompanying tutorial, we'll talk about Terrafom, HCL files, terraform directorys, file structure, and how to initialize a terrform directory. We'll be getting most of our information from the [Linode terraform provider](https://registry.terraform.io/providers/linode/linode/latest/docs).
+In the accompanying tutorial, we'll talk about installing Terrafom, initilizing directorys, and how to initialize our first terrform resource. We'll be getting most of our information from the [Linode terraform provider](https://registry.terraform.io/providers/linode/linode/latest/docs).
 
 ## Installing Terraform
 
