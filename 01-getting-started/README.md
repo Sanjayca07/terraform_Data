@@ -66,6 +66,6 @@ This is a basic example of how to add a resouce like an instance into a terrafor
 
 Rather than creating a user we'd rather create a simple web instance. You'll first remove the user block and add an instance block. You can find reference to it in the [terraform provider for Linode](https://registry.terraform.io/providers/linode/linode/latest/docs/resources/instance). We'll add in the block and update settings as needed. We can validate our settings using `terraform validate` once our changes our saved. If it is, then we can do `terraform apply` and enter `yes` to confirm.
 
-Now we have set up our instance we can connect to it and verify that it's up and running. 
+Now we have set up our instance we can connect to it and verify that it's up and running.
 
 This has been a quick intro into some basics of terraform. You can use `terraform destroy` to spin down with the instance once you're done.
