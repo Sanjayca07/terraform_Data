@@ -4,6 +4,8 @@ We'll be going over the basics of getting started of Terraform. You'll need to m
 
 In the accompanying tutorial, we'll talk about installing Terrafom, initilizing directorys, and how to initialize our first terrform resource. We'll be getting most of our information from the [Linode terraform provider](https://registry.terraform.io/providers/linode/linode/latest/docs).
 
+- [YouTube Tutorial Pt. 1](https://youtu.be/_YxZFAMezBM)
+
 ## Installing Terraform
 
 For this tutorial we'll be using the manual installation, but you can use the appropriate package manager or installer of your choosing.
