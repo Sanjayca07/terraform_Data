@@ -17,10 +17,18 @@ This tutorial is designed to show some basics of terraform, which is infrastruct
     - [Adding Linode Users](01-getting-started#adding-linode-users)
     - [Setting up an instance](01-getting-started#setting-up-an-instance)
 
-2. [Terraform State And Files](02-terraform-state-and-files)
+2. [Terraform State And Files](02-terraform-state-and-files/)
 
     This portion is to show you different ways to set up your terraform directories, find terraform state information, how to use variables, and to comment within files.
 
     - [Terraform State and Files](02-terraform-state-and-files#0terraform-state-and-files)
     - [Terraform State](02-terraform-state-and-files#terraform-state)
     - [Terraform File Structures And Variables](02-terraform-state-and-files#terraform-file-structures-and-variables)
+
+3. [Terraform CLI, Functions, and Data](03-terraform-cli-functions-and-data/)
+
+    We'll be going over various Terraform CLI Commands, built in functions, and how to use data modules.
+
+    - [Terraform CLI Commands](03-terraform-cli-functions-and-data#terraform-cli-commands)
+    - [Terraform Functions](03-terraform-cli-functions-and-data#terraform-functions)
+    - [Terraform Data Blocks](03-terraform-cli-functions-and-data#terraform-data-blocks)
