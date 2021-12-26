@@ -36,3 +36,12 @@ This tutorial is designed to show some basics of terraform, which is infrastruct
     - [Terraform CLI Commands](03-terraform-cli-functions-and-data#terraform-cli-commands)
     - [Terraform Functions](03-terraform-cli-functions-and-data#terraform-functions)
     - [Terraform Data Blocks](03-terraform-cli-functions-and-data#terraform-data-blocks)
+
+4. [Terraform Working With Multiple Resources](04-terraform-working-with-multiple-resources)
+
+    We'll be creating multiple resources using counts and for_each in this module. We'll also create multiple resoucres that have dependecies upon each other.
+
+    - [Making Multiple Resources Using for_each and count](04-terraform-working-with-multiple-resources#making-multiple-resources-using-for_each-and-count)
+    - [count](04-terraform-working-with-multiple-resources#count)
+    - [for_each](04-terraform-working-with-multiple-resources#for_each)
+    - [Multiple Resources](04-terraform-working-with-multiple-resources#multiple-resources)
