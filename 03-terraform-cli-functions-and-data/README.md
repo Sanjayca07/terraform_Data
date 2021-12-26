@@ -1,12 +1,8 @@
 # Terraform CLI, Functions, and Data
 
----
-
 Here we'll be taking a look at various Terraform CLI commands, built in functions, and data modules. We'll be getting most of our information from the [Linode terraform provider](https://registry.terraform.io/providers/linode/linode/latest/docs) and [Terraform Documentation](https://www.terraform.io/docs/cli/index.html).
 
 ## Terraform CLI Commands
-
----
 
 Say you've created a `.tf` files saved it and want to make sure that your formating is correct. Within the directory you can run `terraform fmt`. This will then automatically format the file. I've add a [folder](bad-format) that includes a [file](bad-format/main.tf) that you can run the command on to test.
 
@@ -15,8 +11,6 @@ Another useful command to do some testing is `terraform console`. This allows yo
 If you are unsure if any current written terraform is valid such as formatting, functions, etc, then run `terraform validate`. This will validate that your current terraform is valid, but doesn't validate it has all the required parameters from your provider. 
 
 ## Terraform Functions
-
----
 
 If we want to do some [functions](https://www.terraform.io/language/functions) within our terraform you can find all the linked documentation within the supplied link. Here are a few examples of what that would look like within code.
 
@@ -65,8 +59,6 @@ resource "aws_iam_policy" "policy" {
 ```
 
 ## Terraform Data Blocks
-
----
 
 Terraform has an ability to reference things outside the terraform state in providers. This is used by creating a data block. What we'll need to do is create a linode server manually within the linode UI.
 

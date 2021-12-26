@@ -1,12 +1,8 @@
 # Terraform State And Files
 
----
-
 Here we'll be taking a look at `terraform state`, files, and file structure. We'll be getting most of our information from the [Linode terraform provider](https://registry.terraform.io/providers/linode/linode/latest/docs).
 
 ## Terraform State
-
----
 
 To view state our terraform directory we can use `terraform state list`. First, we'll need to spin up some resources in order to view them. In the [state](./state) folder, you'll be able to `terraform init`, then `terraform plan` to spin up an instance and a user. Once spun up, you'll be able to run `terraform state list` in order to see all of the current resources terraform set up.
 
@@ -19,8 +15,6 @@ State files are the source of all truth for terraform. If it doesn't exist in th
 Try running that command and doing another `terraform apply`. You'll see that it will has destroyed that specific instance and recreated it. You can also choose to `untaint` a resource by using `terraform untaint` and adding the specific resource.
 
 ## Terraform File Structures And Variables
-
----
 
 Terraform will read all files within a directory. Standard practice is to use `main.tf` as the primary file within a directory and either split out things as neccessary. For instance, say we wanted to have a token or key in a file. We might not want to keep that in our `main.tf` or to make it reusable keep it in a seperate file and share our primary terraform.
 

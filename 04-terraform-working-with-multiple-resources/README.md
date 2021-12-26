@@ -1,12 +1,8 @@
 # Terraform Working With Multiple Resources
 
----
-
 One of the core concepts of Terraform is being able to codify all of you infrastructure as code. This is the power of Terraform is that you can spin up and spin down resources in a matter of moments and create whole environments. In this section, we'll go through the basics of creating a whole environment from scratch. I'll be using a few different resoucres and some that will call to each other.
 
 ## Making Multiple Resources Using for_each and count
-
----
 
 ### `count`
 
@@ -186,8 +182,6 @@ resource "linode_instance" "servers" {
 If you now run a `terraform plan` and `terraform apply` you'll see that our new servers have been created with all the values specificed within their maps. Feel free to now add another map object and re-running apply to see how that affects the state of each resource.
 
 ## Multiple Resources
-
----
 
 When building you Terraform, one of it's main abilities it to create all you infrastructure in one place. Many resources have dependencies that can be created and easily referenced in your code. For instance, say we want to spin up a simple website at the time we create our web server. If we look at [Linode's Terraform Registry](https://registry.terraform.io/providers/linode/linode/latest/docs) there is a resource called `linode_stackscript`. When you create a lindoe instance you can use one of these stack scripts as a part of start up.
 
