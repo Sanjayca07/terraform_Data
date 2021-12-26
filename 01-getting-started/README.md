@@ -1,5 +1,7 @@
 # Terraform Getting Started
 
+---
+
 We'll be going over the basics of getting started of Terraform. You'll need to make sure to have a Linode Account if you follow along. You can go [here](https://https://linode.gvw92c.net/b1tsized) to check them out.
 
 In the accompanying tutorial, we'll talk about installing Terrafom, initilizing directorys, and how to initialize our first terrform resource. We'll be getting most of our information from the [Linode terraform provider](https://registry.terraform.io/providers/linode/linode/latest/docs).
@@ -7,6 +9,8 @@ In the accompanying tutorial, we'll talk about installing Terrafom, initilizing 
 - [YouTube Tutorial Pt. 1](https://youtu.be/_YxZFAMezBM)
 
 ## Installing Terraform
+
+---
 
 For this tutorial we'll be using the manual installation, but you can use the appropriate package manager or installer of your choosing.
 
@@ -22,6 +26,8 @@ Now that it's installed we can continue with getting started. You can also setup
 
 ## Initializing a directory
 
+---
+
 For a directory to be initilized you'll ned to navigate into that directory through the terminal.
 
 `cd /{terraform-path}`
@@ -29,6 +35,8 @@ For a directory to be initilized you'll ned to navigate into that directory thro
 Once inside of the directory a `main.tf` will need to be created. To be able to initialize you'll have to add a provider block. In the next section, you'll see an example of that block.
 
 ## Provider Block
+
+---
 
 This is a basic example of how to add a provide into a terraform file.
 
@@ -41,6 +49,8 @@ You'll notice we need an environment variable set to be able to access Linode us
 This command will initialize the directory and download any necessarry modules from the provider. You'll also see a tf state file and tf lock file being added. The state will keep track of anything created with the terraform modules and the tf lock will keep checksums of the modules and assets to make sure that there are no changes or mismatches.
 
 ## Adding Linode Users
+
+---
 
 This is a basic example of how to add a resouce like a user creation into a terraform file.
 
@@ -61,6 +71,8 @@ This will also run `terraform plan` again. Once it's finished it will ask you co
 Say we don't want to keep this user. You wouldn't want to manually delete it, because the next time Terraform would run it would see the resource isn't there and recreate it. In order to remove it from your state file and confirm destruction we would first need to run `terraform destroy`. This will again run `terraform plan` and then confirm the changes. Once run you can check in Linode to verify that it's been destroyed.
 
 ## Setting up an instance
+
+---
 
 This is a basic example of how to add a resouce like an instance into a terraform file.
 

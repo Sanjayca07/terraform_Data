@@ -11,20 +11,23 @@ provider "linode" {
   token = var.linode_token
 }
 
-resource "linode_user" "Jeff" {
-    username = "jeff_test"
-    email = "jeff@jeff.io"
+variable "web_servers" {
+  description = "Number of Web Servers"
+  default = 2
+  type = number 
 }
 
 resource "linode_instance" "web" {
-    label = "simple_instance"
+    count = var.web_servers
+
+    label = "${var.instance_label}-${count.index}"
     image = "linode/ubuntu18.04"
     region = "us-central"
     type = "g6-standard-1"
-    root_pass = "terr4form-test"
+    root_pass = "terr4form-test-${count.index}"
 
-    group = "terraform"
-    tags = [ "terraform" ]
+    group = "webservers"
+    tags = [ "terraform", "webserver-${count.index}" ]
     swap_size = 256
     private_ip = true
 }

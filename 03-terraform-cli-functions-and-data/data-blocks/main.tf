@@ -1,5 +1,14 @@
+terraform {
+  required_providers {
+    linode = {
+      source = "linode/linode"
+      version = "1.25.0"
+    }
+  }
+}
+
 provider "linode" {
-  token = "$LINODE_TOKEN"
+  token = var.linode_token
 }
 
 data "linode_instances" "imported_instance"{

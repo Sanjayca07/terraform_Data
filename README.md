@@ -1,10 +1,14 @@
 # Terraform Tutorial
 
+---
+
 This tutorial is designed to show some basics of terraform, which is infrastructure as code. You can follow along with the corresponding youtube videos. These are just a quick way with teaching you how to get started.
 
 - [YouTube Tutorial Playlist](https://youtube.com/playlist?list=PLGWu201K4_lgCRK-SxW_EpvOc8GLY77U3)
 
 ## Tutorials
+
+---
 
 1. [Getting Started](01-getting-started/)
 
